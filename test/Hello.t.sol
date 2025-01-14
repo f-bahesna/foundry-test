@@ -5,16 +5,13 @@ import "forge-std/Test.sol";
 import "../src/Hello.sol";
 
 contract HelloTest is Test {
-	Hello public hello;
+    Hello public hello;
 
-	function setUp() public {
-		hello = new Hello();
-	}
+    function setUp() public {
+        hello = new Hello();
+    }
 
-	function testHello() public {
-		assertEq(
-			hello.greet(),
-			"Hello"
-		);
-	}
+    function testHello() public {
+        assertEq(hello.greet(), "Hello");
+    }
 }

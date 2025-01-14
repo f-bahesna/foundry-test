@@ -2,11 +2,11 @@
 pragma solidity ^0.8.13;
 
 contract Counter {
-    uint public count;
+    uint256 public count;
 
-   //get current count
-   function get() public view returns (uint){
-	return count;
+    //get current count
+    function get() public view returns (uint256) {
+        return count;
     }
 
     //increment count by 1
@@ -15,6 +15,6 @@ contract Counter {
     }
 
     function dec() public {
-	count -= 1;
+        count -= 1;
     }
 }
